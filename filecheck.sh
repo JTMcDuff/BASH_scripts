@@ -1,6 +1,6 @@
 #!/bin/bash
 
-read -p "File to check?" NAME
+NAME=$1;
 
 if [ -d $NAME ]
 	then
