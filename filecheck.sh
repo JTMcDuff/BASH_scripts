@@ -1,7 +1,8 @@
 #!/bin/bash
 
-NAME=$1;
 
+for NAME in $@
+do
 if [ -d $NAME ]
 	then
 	echo "$NAME is a directory."
@@ -12,3 +13,4 @@ else
 	echo "$NAME is another type of file."
 fi
 ls -l $NAME;
+done
