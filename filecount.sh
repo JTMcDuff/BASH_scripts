@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function filecount() {
-	NUM=$(($(ls -lah | wc -l) - 3));
-	echo $NUM;
+	NUM=$(($(ls -lah $1 | wc -l) - 3));
+	echo "${1}: $NUM";
 }
-filecount;
+filecount $1;
